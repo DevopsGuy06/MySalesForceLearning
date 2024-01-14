@@ -15,12 +15,15 @@ Profiles in Salesforce serve as a blueprint for user permissions and access sett
 Broad Configuration:
 ●Profiles provide a comprehensive set of permissions and access settings for a user.
 ●They encompass various aspects such as object permissions, field permissions, page layouts, record types, and user interface settings.
+
 Assigned at User Creation:
 ●Profiles are typically assigned to users when their accounts are created.
 ●A user can have only one profile at a time, which forms the foundation for their access and permissions within Salesforce.
+
 Fixed Configuration:
 ●Any changes to a user's permissions require modifying their profile directly.
 ●Changes to profiles may impact multiple users who share the same profile, potentially leading to challenges in maintaining a granular level of access.
+
 Access to Objects and Fields:
 ●Profiles control access to objects, determining if users can create, read, edit, or delete records.
 ●They also specify which fields within those objects a user can access.
@@ -31,12 +34,15 @@ Permission sets, on the other hand, provide a way to extend or grant additional 
 Granular Permission Assignment:
 ●Permission sets allow for a more granular and flexible approach to granting additional permissions.
 ●They are additive and can be assigned on top of a user's existing profile to extend their access without changing the profile itself.
+
 Dynamic Assignment:
 ●Permission sets can be assigned or removed from users at any time, providing dynamic control over user permissions.
 ●Users can have multiple permission sets, allowing for the accumulation of specific permissions as needed.
+
 Field and Feature-Level Access:
 ●Permission sets are often used to grant access to specific fields within an object or features that are not part of the user's profile.
 ●They are especially useful for scenarios where certain users or groups require unique permissions without changing their profile.
+
 Changes Without Impacting Profile:
 ●Modifying permission sets does not affect the underlying profile, offering a way to tailor permissions for specific tasks without altering the user's overall access.
 
