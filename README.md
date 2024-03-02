@@ -46,4 +46,26 @@ Field and Feature-Level Access:
 Changes Without Impacting Profile:
 ●Modifying permission sets does not affect the underlying profile, offering a way to tailor permissions for specific tasks without altering the user's overall access.
 
+# Relationship in Salesforce
 
+**Lookup relationship**
+Loosely coupled.
+Roll-up summary field not available.
+Parent record is not required when creating a child record.
+Lookup fields are not required on the page layout of the detail record but if you make them a required field, it is advised!
+Standard object record can be on the detail side of a custom object in a lookup relationship.
+By default record ownership of child records is not controlled by the parent.
+You can have a child record without a parent.
+You can have a maximum of 40 lookups on an object.
+No cascade delete.
+
+**Master-detail relationship**
+Strongly coupled.
+Roll-up summary field is available.
+Parent record is required in order to save a child record.
+Master-detail field is always required on the page layout of the detail record (because of the point above).
+Standard object record cannot be a child.
+The parent controls the record ownership of child records. The owner field is not available on the detail record in master-detail relationship queues, sharing rules and manual sharing is not possible for detail records as it requires the owner field.
+You cannot have a child record without a parent.
+You can have a maximum of two master details on an object.
+Cascade delete.
